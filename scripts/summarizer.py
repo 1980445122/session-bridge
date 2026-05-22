@@ -56,7 +56,7 @@ def summarize(transcript: str, api_key: str = "") -> dict:
     if not api_key:
         return {"error": "No DeepSeek API key found. Set DEEPSEEK_API_KEY or ANTHROPIC_AUTH_TOKEN."}
 
-    prompt = SUMMARY_PROMPT.format(transcript=transcript[-8000:])  # Last ~8000 chars
+    prompt = SUMMARY_PROMPT.replace("{transcript}", transcript[-8000:])
 
     payload = json.dumps({
         "model": DEFAULT_MODEL,
