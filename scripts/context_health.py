@@ -31,7 +31,7 @@ def main():
 
     bar_len = 20
     filled = int(bar_len * pct / 100)
-    bar = "█" * filled + "░" * (bar_len - filled)
+    bar = "#" * filled + "-" * (bar_len - filled)
 
     status = "OK"
     if pct >= 90:
