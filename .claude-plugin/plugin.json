@@ -1,0 +1,9 @@
+{
+  "name": "session-bridge",
+  "version": "0.1.0",
+  "description": "Automatically saves and restores Claude Code session context before compaction. Never lose your context again. Free tier: local storage (5 sessions). Pro ($6/mo): cloud sync, unlimited sessions. Team ($15/mo): shared knowledge base.",
+  "author": {
+    "name": "Session Bridge Team",
+    "email": "support@sessionbridge.dev"
+  }
+}
